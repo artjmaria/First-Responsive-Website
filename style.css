@@ -29,10 +29,7 @@ section.child {
     grid-column: 2/3;
     justify-self: center;
     align-self: center;
-    font-size: 200%;
-
-
-
+    font-size: 275%;
 
 }
 
@@ -47,4 +44,13 @@ section.child {
 
 p {
     font-size: 50%;
+}
+.title {
+    padding-bottom: 5%;
+    font-size: 230%;
+    
+}
+.one {
+    border-top: solid #34A8DD 50px;
+    
 }
