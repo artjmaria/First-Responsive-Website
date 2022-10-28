@@ -20,7 +20,7 @@ body {
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 50% 50%;
-    border: solid black 10px;
+    /* border: solid black 10px; */
     min-height: 100%;
 
 }
@@ -29,7 +29,7 @@ section.child {
     grid-column: 2/3;
     justify-self: center;
     align-self: center;
-    font-size: 275%;
+    font-size: 278%;
 
 }
 
@@ -53,4 +53,10 @@ p {
 .one {
     border-top: solid #34A8DD 50px;
     
+}
+.two {
+    border-top: solid #F46830 50px;
+}
+.three {
+    border-top: solid #2BCEC0 50px;
 }
