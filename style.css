@@ -10,21 +10,23 @@ html {
 
 
 
+
+
 }
 
 /* Header Styling */
 .flexparent {
-    display: flex;
-    flex-flow: column wrap;
+    display: inline-flex;
+    flex-flow: row wrap;
     justify-content: space-evenly;
-    font-size: 400%;
+    font-size: 600%;
+
 
 
 }
 
-.flexchild {
+header.flexchild {
     align-self: center;
-
 
 
 }
@@ -49,23 +51,27 @@ main {
 
 
 
+
 }
 
 .titles {
-    display: flex;
+    display: inline-flex;
     flex-flow: column wrap;
     align-items: stretch;
     align-content: center;
     background: #1B1B1B;
-    font-size: 290%;
+    font-size: 227%;
     overflow-wrap: break-word;
     text-align: center;
+
 
 
 }
 
 .spans {
-    font-size: 70%;
+
+    font-size: 55%;
+
 
 
 
@@ -76,12 +82,13 @@ main {
     grid-area: titleone;
 
 
+
 }
 
 p.title1 {
 
     border-top: solid #34A8DD 30px;
-    margin: 20%;
+    margin: 17%;
 
 
 }
@@ -94,7 +101,7 @@ p.title1 {
 
 p.title2 {
     border-top: solid #F46830 30px;
-    margin: 20%;
+    margin: 17%;
 
 }
 
@@ -106,13 +113,20 @@ p.title2 {
 
 p.title3 {
     border-top: solid #2BCEC0 30px;
-    margin: 20%;
+    margin: 17%;
 
 }
 
-@media only screen and (max-width: 576px) {
+
+
+/* Responsive Design */
+
+@media (max-width: 576px) {
+
+
 
     .container {
+
         grid-template-columns: 100%;
         grid-template-rows: 25% 25% 25% 25%;
         grid-template-areas:
@@ -123,7 +137,8 @@ p.title3 {
     }
 
     html {
-        height: 200%;
+        height: 210%;
+
 
     }
 
@@ -134,7 +149,7 @@ p.title3 {
     }
 
     .titles {
-        font-size: 290%;
+        font-size: 295%;
         display: flex;
         flex-flow: column wrap;
         align-items: stretch;
@@ -146,12 +161,126 @@ p.title3 {
 
     }
 
-    span {
-        font-size: 100%;
+    .spans {
+        font-size: 50%;
+        flex-wrap: wrap;
+    }
+
+}
+
+
+
+@media (min-width: 577px) {
+
+    * {
+        Margin: 0;
+        Padding: 0;
+        Border: 0;
+
+    }
+
+    html {
+        height: 100%;
+
+
+
+
+
+    }
+
+    /* Header Styling */
+    .flexparent {
+        display: inline-flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        font-size: 600%;
+
+
+
+    }
+
+    header.flexchild {
+        align-self: center;
+
+
+    }
+
+    /* Grid Styling */
+    .container {
+        display: grid;
+        height: 100%;
+        color: #EFF2EE;
+        font-family: 'Times New Roman', Times, serif;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas:
+            "main main main"
+            "titleone titletwo titlethree";
+
+    }
+
+    main {
+        background: #2BCEC0;
+        grid-area: main;
+
+
+
+
+    }
+
+    .titles {
+        display: inline-flex;
+        flex-flow: column wrap;
+        align-items: stretch;
+        align-content: center;
+        background: #1B1B1B;
+        font-size: 220%;
+        overflow-wrap: break-word;
+        text-align: center;
+        color: #EFF2EE;
+
+
+
     }
 
 
 
+    #titleone {
+        grid-area: titleone;
 
 
+
+    }
+
+    p.title1 {
+
+        border-top: solid #34A8DD 30px;
+        margin: 17%;
+
+
+    }
+
+    #titletwo {
+
+        grid-area: titletwo;
+
+    }
+
+    p.title2 {
+        border-top: solid #F46830 30px;
+        margin: 17%;
+
+    }
+
+    #titlethree {
+
+        grid-area: titlethree;
+
+    }
+
+    p.title3 {
+        border-top: solid #2BCEC0 30px;
+        margin: 17%;
+
+    }
 }
