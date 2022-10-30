@@ -8,10 +8,6 @@
 html {
     height: 100%;
 
-
-
-
-
 }
 
 /* Header Styling */
@@ -21,13 +17,10 @@ html {
     justify-content: space-evenly;
     font-size: 600%;
 
-
-
 }
 
 header.flexchild {
     align-self: center;
-
 
 }
 
@@ -48,10 +41,6 @@ header.flexchild {
 main {
     background: #2BCEC0;
     grid-area: main;
-
-
-
-
 }
 
 .titles {
@@ -64,24 +53,16 @@ main {
     overflow-wrap: break-word;
     text-align: center;
 
-
-
 }
 
 .spans {
 
     font-size: 55%;
-
-
-
-
 }
 
 
 #titleone {
     grid-area: titleone;
-
-
 
 }
 
@@ -89,8 +70,7 @@ p.title1 {
 
     border-top: solid #34A8DD 30px;
     margin: 17%;
-
-
+    padding-top: 3%;
 }
 
 #titletwo {
@@ -102,6 +82,7 @@ p.title1 {
 p.title2 {
     border-top: solid #F46830 30px;
     margin: 17%;
+    padding-top: 3%;
 
 }
 
@@ -114,6 +95,7 @@ p.title2 {
 p.title3 {
     border-top: solid #2BCEC0 30px;
     margin: 17%;
+    padding-top: 3%;
 
 }
 
@@ -138,7 +120,6 @@ p.title3 {
 
     html {
         height: 210%;
-
 
     }
 
@@ -182,10 +163,6 @@ p.title3 {
     html {
         height: 100%;
 
-
-
-
-
     }
 
     /* Header Styling */
@@ -195,14 +172,10 @@ p.title3 {
         justify-content: space-evenly;
         font-size: 600%;
 
-
-
     }
 
     header.flexchild {
         align-self: center;
-
-
     }
 
     /* Grid Styling */
@@ -223,9 +196,6 @@ p.title3 {
         background: #2BCEC0;
         grid-area: main;
 
-
-
-
     }
 
     .titles {
@@ -239,8 +209,6 @@ p.title3 {
         text-align: center;
         color: #EFF2EE;
 
-
-
     }
 
 
@@ -248,15 +216,12 @@ p.title3 {
     #titleone {
         grid-area: titleone;
 
-
-
     }
 
     p.title1 {
 
         border-top: solid #34A8DD 30px;
         margin: 17%;
-
 
     }
 
